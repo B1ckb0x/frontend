@@ -1,5 +1,9 @@
 module.exports = {
     devServer: {
-        allowedHosts: 'all'
+        disableHostCheck: true,
+        allowedHosts: [
+            'onrender.com',
+            '.onrender.com',
+        ]
     }
 }
