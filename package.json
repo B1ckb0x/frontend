@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://frontend-mauve-gamma.vercel.app",
   "proxy": "https://test-react-django-backend.onrender.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
