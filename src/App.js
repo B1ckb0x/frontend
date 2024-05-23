@@ -23,7 +23,7 @@ class App extends Component {
 
   refreshList = () => {
     axios
-      .get("/api/todos/")
+      .get("https://test-react-django-backend.onrender.com/api/todos/")
       .then((res) => this.setState({ todoList: res.data }))
       .catch((err) => console.log(err));
   };
@@ -37,18 +37,18 @@ class App extends Component {
 
     if (item.id) {
       axios
-        .put(`/api/todos/${item.id}/`, item)
+        .put(`https://test-react-django-backend.onrender.com/api/todos/${item.id}/`, item)
         .then((res) => this.refreshList());
       return;
     }
     axios
-      .post("/api/todos/", item)
+      .post("https://test-react-django-backend.onrender.com/api/todos/", item)
       .then((res) => this.refreshList());
   };
 
   handleDelete = (item) => {
     axios
-      .delete(`/api/todos/${item.id}/`)
+      .delete(`https://test-react-django-backend.onrender.com/api/todos/${item.id}/`)
       .then((res) => this.refreshList());
   };
 
